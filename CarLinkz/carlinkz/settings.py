@@ -149,7 +149,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "developer.external.email@gmail.com"
-EMAIL_HOST_PASSWORD = "trazkwaoxynlfnkn"
+EMAIL_HOST_PASSWORD = "..." #Your Created Apps Password 16 digit in this Email above
 EMAIL_USE_TLS = True
 
 
