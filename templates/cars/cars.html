@@ -67,6 +67,9 @@
                                         <i class="flaticon-pin"></i>{{car.state}}, {{car.city}}
                                     </a>
                                 </div>
+                                <a href="{% url 'car_detail' car.id %}">
+                                  <button class="btn btn-md button-theme">Book Car</button>
+                                </a>
                                 <ul class="facilities-list clearfix">
                                     <li>{{car.fuel_type}}</li>
                                     <li>{{car.miles}} km</li>
