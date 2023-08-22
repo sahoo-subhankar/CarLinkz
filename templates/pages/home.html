@@ -24,8 +24,18 @@
             Extensive inventory of new and used vehicles.
           </h5>
           {% comment %} <a href="{% url 'about' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-in"></i> Read More</a> {% endcomment %}
-          <a href="{% url 'login' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-in"></i> Login</a>
-          <a href="{% url 'register' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-user"></i> Register</a>
+
+          {% if user.is_authenticated %}
+            <a href="{% url 'dashboard' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-dashboard"></i> Dashboard</a>
+            <a href="javascript:{document.getElementById('logout').submit()}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-out"></i>Logout</a>
+            <form id="logout" action="{% url 'logout' %}" method="POST">
+              {% csrf_token %}
+              <input type="hidden" name="next" value="{{request.path}}">
+            </form>
+          {% else %}
+            <a href="{% url 'login' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-in"></i> Login</a>
+            <a href="{% url 'register' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-user"></i> Register</a>
+          {% endif %}
         </div>
       </div>
       <div class="carousel-item banner-max-height item-bg">
@@ -39,8 +49,18 @@
             Diverse range of top-quality cars, trucks, and SUVs from leading brands.
           </h5>
           {% comment %} <a href="{% url 'about' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-in"></i> Read More</a> {% endcomment %}
-          <a href="{% url 'login' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-in"></i> Login</a>
-          <a href="{% url 'register' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-user"></i> Register</a>
+
+          {% if user.is_authenticated %}
+            <a href="{% url 'dashboard' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-dashboard"></i> Dashboard</a>
+            <a href="javascript:{document.getElementById('logout').submit()}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-out"></i>Logout</a>
+            <form id="logout" action="{% url 'logout' %}" method="POST">
+              {% csrf_token %}
+              <input type="hidden" name="next" value="{{request.path}}">
+            </form>
+          {% else %}
+            <a href="{% url 'login' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-in"></i> Login</a>
+            <a href="{% url 'register' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-user"></i> Register</a>
+          {% endif %}
         </div>
       </div>
       <div class="carousel-item banner-max-height item-bg">
@@ -54,8 +74,18 @@
             Assist you throughout the entire car buying process.
           </h5>
           {% comment %} <a href="{% url 'about' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-in"></i> Read More</a> {% endcomment %}
-          <a href="{% url 'login' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-in"></i> Login</a>
-          <a href="{% url 'register' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-user"></i> Register</a>
+
+          {% if user.is_authenticated %}
+            <a href="{% url 'dashboard' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-dashboard"></i> Dashboard</a>
+            <a href="javascript:{document.getElementById('logout').submit()}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-out"></i>Logout</a>
+            <form id="logout" action="{% url 'logout' %}" method="POST">
+              {% csrf_token %}
+              <input type="hidden" name="next" value="{{request.path}}">
+            </form>
+          {% else %}
+            <a href="{% url 'login' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-sign-in"></i> Login</a>
+            <a href="{% url 'register' %}" class="btn btn-lg btn-theme sign-in"><i class="fa fa-user"></i> Register</a>
+          {% endif %}
         </div>
       </div>
     </div>
