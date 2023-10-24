@@ -1,2 +1,2 @@
 # CarLinkz
-Car Dealer website.
+Online Car Dealer Platform.
