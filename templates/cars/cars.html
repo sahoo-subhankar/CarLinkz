@@ -67,9 +67,6 @@
                                         <i class="flaticon-pin"></i>{{car.state}}, {{car.city}}
                                     </a>
                                 </div>
-                                {% comment %} <a href="{% url 'car_detail' car.id %}">
-                                  <button class="btn btn-md button-theme">Book Car</button>
-                                </a> {% endcomment %}
                                 <ul class="facilities-list clearfix">
                                     <li>{{car.fuel_type}}</li>
                                     <li>{{car.miles}} km</li>
@@ -183,6 +180,7 @@
                             </div>
                         </form>
                     </div>
+                   
                     <!-- Question start -->
                     {% comment %} <div class="widget question widget-3">
                         <h5 class="sidebar-title">Follow us</h5>
