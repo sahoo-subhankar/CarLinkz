@@ -1,2 +1,2 @@
-# CarZone
-Car Dealer website.
+# CarLinkz
+Online Car Dealer Platform.
