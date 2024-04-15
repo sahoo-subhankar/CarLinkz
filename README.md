@@ -7,7 +7,7 @@ Online Car Dealer Platform, where people can rent & buy cars.
 ### Requirements
 - `Python`
 - `Django`
-- `Jinja2 Template Engine`
+- `Jinja2`
 - `MySQL`
 - `HTML`
 - `CSS`
