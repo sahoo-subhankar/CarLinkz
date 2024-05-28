@@ -1,7 +1,7 @@
 # CarLinkz
 
 ### Introduction
-Online Car Dealer Platform, where people can rent & buy cars.
+This is a robust online car dealer platform, where people can rent & buy cars.
 
 
 ### Requirements
